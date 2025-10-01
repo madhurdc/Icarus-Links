@@ -29,6 +29,13 @@ input[type="url"], select {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+#selection {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 #buttons {
     margin: 10px auto;
 }
@@ -95,3 +102,4 @@ button:hover {
         padding-bottom: 10%;
     }
 }
+
