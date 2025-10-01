@@ -1,0 +1,97 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    color: #333;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+h1 img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+/* Input and select styling */
+input[type="url"], select {
+    padding: 10px;
+    margin: 10px 5px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#buttons {
+    margin: 10px auto;
+}
+/* Buttons styling */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* QR Code container */
+#qrcode {
+    margin: 30px auto;
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    min-width: 250px;
+    min-height: 250px;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+#qrcode:empty::before {
+    content: "Your QR code will appear here";
+    text-align: center;
+}
+
+/* ====== Responsive adjustments ====== */
+@media screen and (max-width: 500px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    h1 img {
+        width: 0.9em;
+        height: 0.9em;
+    }
+
+    input[type="url"], select, button {
+        width: 90%;        /* full width */
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    #qrcode {
+        width: 90%;
+        height: 50%;
+        padding-bottom: 10%;
+    }
+}

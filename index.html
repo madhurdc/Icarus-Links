@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Icarus Links – Free online QR code generator. Create, customize, and download QR codes for your links in different colors and sizes. Fast, simple, and mobile-friendly.">
+    <meta name="author" content="Madhur">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Icarus Links | Free Online QR Code Generator</title>
+</head>
+<body>
+    <h1><img src="icon.png"> QR Code Generator</h1>
+
+    <label for="qr-input">URL:</label>
+    <input type="url" id="qr-input" placeholder="Enter a URL">
+
+    <label for="color-select">QR Color:</label>
+    <select id="color-select">
+        <option value="black-white" selected>Black & White</option>
+        <option value="orange-black">Orange & Black</option>
+        <option value="blue-white">Blue & White</option>
+        <option value="green-white">Green & White</option>
+        <option value="purple-yellow">Purple & Yellow</option>
+    </select>
+
+    <label for="size-select">QR Size:</label>
+    <select id="size-select">
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <div id="buttons">
+        <button id="generate">Generate</button>
+        <button id="download">Download PNG</button>
+    </div>
+
+    <div id="qrcode"></div>
+
+    <script src="qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
