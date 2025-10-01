@@ -11,26 +11,26 @@
 </head>
 <body>
     <h1><img src="icon.png"> QR Code Generator</h1>
+    <div id="selection">
+        <label for="qr-input">URL:</label>
+        <input type="url" id="qr-input" placeholder="Enter a URL">
 
-    <label for="qr-input">URL:</label>
-    <input type="url" id="qr-input" placeholder="Enter a URL">
+        <label for="color-select">QR Color:</label>
+        <select id="color-select">
+            <option value="black-white" selected>Black & White</option>
+            <option value="orange-black">Orange & Black</option>
+            <option value="blue-white">Blue & White</option>
+            <option value="green-white">Green & White</option>
+            <option value="purple-yellow">Purple & Yellow</option>
+        </select>
 
-    <label for="color-select">QR Color:</label>
-    <select id="color-select">
-        <option value="black-white" selected>Black & White</option>
-        <option value="orange-black">Orange & Black</option>
-        <option value="blue-white">Blue & White</option>
-        <option value="green-white">Green & White</option>
-        <option value="purple-yellow">Purple & Yellow</option>
-    </select>
-
-    <label for="size-select">QR Size:</label>
-    <select id="size-select">
-        <option value="small">Small</option>
-        <option value="medium" selected>Medium</option>
-        <option value="large">Large</option>
-    </select>
-
+        <label for="size-select">QR Size:</label>
+        <select id="size-select">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
     <div id="buttons">
         <button id="generate">Generate</button>
         <button id="download">Download PNG</button>
